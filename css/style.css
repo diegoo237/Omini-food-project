@@ -151,22 +151,27 @@ body {
   margin: 0 auto;
   padding: 0 3.2rem;
 }
+.center-text {
+  text-align: center;
+}
+
 #app--img {
   height: 38rem;
 }
 .subheading {
+  display: block;
   color: #e67e22;
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.75px;
+  margin-bottom: 1.6rem;
 }
 .heading-secondary {
   font-size: 4.5rem;
   color: #333;
   font-weight: 700;
   margin-bottom: 9.6rem;
-  margin-top: 1.6rem;
 }
 .step-text-number {
   font-size: 8rem;
@@ -193,30 +198,34 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 }
 .meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+}
+.meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.185);
 }
 .tag {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.vegetarian-tag {
+  background-color: #51cf66;
   padding: 0.4rem;
   border-radius: 9px;
   margin-bottom: 1rem;
 }
-.vegetarian-tag {
-  background-color: #51cf66;
-}
 .vegan-tag {
   background-color: #94d82d;
+  padding: 0.4rem;
+  border-radius: 9px;
+  margin-bottom: 1rem;
 }
 .paleo-tag {
   background-color: #ffd43b;
+  padding: 0.4rem;
+  border-radius: 9px;
+  margin-bottom: 1rem;
 }
 .meal-tag-text {
   font-size: 1.1rem;
@@ -224,10 +233,58 @@ body {
   color: #333;
 }
 .meal-title {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 600;
+  margin-bottom: 2.8rem;
+  color: #333;
 }
 .meal-row {
   display: flex;
   gap: 0.7rem;
+}
+.list-title {
+  color: #333;
+  font-size: 3rem;
+}
+.meal-list-text {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: #555;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.meals-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.see-all:visited,
+.see-all:link {
+  font-size: 2rem;
+  color: #e67e22;
+}
+
+.meal-icons {
+  max-height: 2.8rem;
+  max-width: 2.8rem;
+
+  color: #e67e22;
+}
+.margin-bottom-md {
+  margin-bottom: 6rem;
+}
+.meal-img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+}
+.diets {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+}
+.diets-title {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 3.2rem;
 }
