@@ -132,13 +132,35 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+.section-feature {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #999;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.featured-img {
+  height: 3.5rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
 .section-how,
 .section-meals {
   padding: 9.6rem 0;
 }
 .grid {
   display: grid;
-  gap: 9.6rem;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -156,7 +178,7 @@ body {
 }
 
 #app--img {
-  height: 38rem;
+  width: 35%;
 }
 .subheading {
   display: block;
@@ -172,6 +194,11 @@ body {
   color: #333;
   font-weight: 700;
   margin-bottom: 9.6rem;
+}
+.step-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .step-text-number {
   font-size: 8rem;
@@ -191,8 +218,30 @@ body {
   line-height: 3rem;
 }
 .phone-container {
+  position: relative;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.phone-container::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 60%;
+  padding-bottom: 60%;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  z-index: -1;
+}
+.phone-container::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 45%;
+  padding-bottom: 45%;
+  background-color: #fae5d3;
+  border-radius: 50%;
+  z-index: -1;
 }
 .container-meals {
   max-width: 120rem;
@@ -202,6 +251,11 @@ body {
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 10px;
+  transition: all 0.4s;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.4rem 6.4rem rgba(0, 0, 0, 0.06);
 }
 .meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
@@ -244,7 +298,7 @@ body {
 }
 .list-title {
   color: #333;
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 .meal-list-text {
   font-size: 1.9rem;
@@ -265,6 +319,10 @@ body {
   font-size: 2rem;
   color: #e67e22;
 }
+.see-all:hover {
+  font-size: 2rem;
+  color: #cf711f;
+}
 
 .meal-icons {
   max-height: 2.8rem;
@@ -280,11 +338,13 @@ body {
   width: 100%;
 }
 .diets {
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 10px;
 }
 .diets-title {
   font-size: 3rem;
   color: #333;
   margin-bottom: 3.2rem;
+}
+.section-testimonial {
+  background-color: #fdf2e9;
 }
