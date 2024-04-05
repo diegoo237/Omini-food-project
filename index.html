@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
   </head>
   <body>
     <header class="header">
@@ -33,7 +35,7 @@
     </header>
 
     <section class="hero-section">
-      <div class="hero">
+      <div class="hero grid grid--2-cols">
         <div class="hero-text">
           <h1 class="title">
             A healthy meal delivered to your door, every single day
@@ -175,7 +177,7 @@
         <div class="meal">
           <img class="meal-img" src="./img/meals/meal-1.jpg" alt="" />
           <div class="meal-content">
-            <div class="tag">
+            <div class="container-tag">
               <span class="vegetarian-tag meal-tag-text">VEGETARIAN</span>
             </div>
             <p class="meal-title">Japanese Gyozas</p>
@@ -243,10 +245,10 @@
           <img class="meal-img" src="./img/meals/meal-2.jpg" alt="" />
           <div class="meal-content">
             <div class="meal-row">
-              <div class="tag">
+              <div class="container-tag">
                 <span class="vegan-tag meal-tag-text">VEGAN</span>
               </div>
-              <div class="tag">
+              <div class="container-tag">
                 <span class="paleo-tag meal-tag-text">PALEO</span>
               </div>
             </div>
@@ -471,16 +473,16 @@
           </ul>
         </div>
       </div>
-      <div class="center-text">
+      <div class="center-text container">
         <a class="see-all" href="#">See all recipes → </a>
       </div>
     </section>
     <section class="section-testimonial">
-      <div class="testimonials-container container">
+      <div class="testimonials-container">
         <span class="subheading">TESTIMONIALS </span>
         <h2 class="heading-secondary">Once you try it, you can't go back</h2>
 
-        <div class="testimonials">
+        <div class="testimonials grid--2-cols">
           <figure class="testimonial">
             <img
               class="testimonial-img"
@@ -534,7 +536,7 @@
           </figure>
         </div>
       </div>
-      <div class="gallery">
+      <div class="gallery grid--3-cols">
         <figure class="gallery-item">
           <img src="./img/gallery/gallery-1.jpg" alt="" />
         </figure>
@@ -578,9 +580,9 @@
         <span class="subheading">Pricing</span>
         <h2 class="heading-secondary">Eating well without breaking the bank</h2>
       </div>
-      <div class="container pricing-grid">
+      <div class="container grid grid--2-cols margin-bottom-md">
         <div class="pricing-plan pricing-plan--starter">
-          <header class="plan-header">
+          <header class="plan-header center-text">
             <p class="plan-name">Starter</p>
             <p class="plan-price"><span>$</span>399</p>
             <p class="plan-text">per month. That's just $13 per meal!</p>
@@ -739,14 +741,14 @@
           </div>
         </div>
       </div>
-      <div class="container plan-grid">
+      <div class="container grid margin-bottom-mp">
         <aside class="plan-details">
           Prices include all applicable taxes. You can cancel at any time. Both
           plans include the following:
         </aside>
       </div>
 
-      <div class="container features-grid">
+      <div class="container features-grid grid--4-cols">
         <div class="feature">
           <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
           <p class="feature-title">Never cook again!</p>
@@ -830,7 +832,7 @@
       </div>
     </section>
     <footer class="footer">
-      <div class="container footer-grid">
+      <div class="container footer-grid grid">
         <div class="logo-col">
           <a href="#" class="footer-logo">
             <img src="./img/omnifood-logo.png" class="logo" alt="" />

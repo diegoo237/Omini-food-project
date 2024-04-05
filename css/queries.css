@@ -1,0 +1,23 @@
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .title {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 75em) {
+  hmtl {
+    font-size: 56.25%;
+  }
+
+  .headin-secondary {
+    font-size: 3.6rem;
+  }
+  .headin-terciary {
+    font-size: 2.4rem;
+  }
+}
