@@ -1,5 +1,6 @@
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 * {
   padding: 0;
@@ -10,6 +11,7 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
+  overflow-x: hidden;
 }
 .hero-section {
   background-color: #fdf2e9;
@@ -87,6 +89,7 @@ body {
   background-color: #fdf2e9;
   height: 9.6rem;
   padding: 0 4.8rem;
+  position: relative;
 }
 .main-nav {
   font-size: 18px;
@@ -98,7 +101,7 @@ body {
 .main-nav-list {
   display: flex;
   list-style: none;
-  gap: 3.2rem;
+  gap: 4.8rem;
   align-items: center;
 }
 .main-nav-link:link,
@@ -125,6 +128,20 @@ body {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 .section-feature {
   padding: 4.8rem 0 3.2rem 0;
 }
@@ -142,8 +159,7 @@ body {
   justify-content: space-around;
 }
 .featured-img {
-  width: auto;
-  max-height: 3.5rem;
+  height: 3.2rem;
   filter: brightness(0);
   opacity: 50%;
 }
@@ -276,6 +292,7 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
+  line-height: 1.2;
 }
 .list {
   list-style: none;
@@ -292,8 +309,13 @@ body {
   color: #cf711f;
 }
 .meal-icons {
-  height: 3rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+.list-icon {
   width: 3rem;
+  height: 3rem;
   color: #e67e22;
 }
 .meal-img {
@@ -338,8 +360,6 @@ body {
 }
 .testimonials-container {
   padding: 9.6rem;
-  max-width: 120rem;
-  margin: 0 auto;
 }
 .testimonials {
   display: grid;
@@ -347,6 +367,7 @@ body {
   column-gap: 8rem;
 }
 .gallery {
+  grid-template-columns: repeat(3, 1fr);
   display: grid;
   padding: 1.6rem;
   gap: 1.6rem;
