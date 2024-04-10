@@ -1,3 +1,4 @@
+/*1344px*/
 @media (max-width: 84em) {
   .hero {
     max-width: 120rem;
@@ -9,6 +10,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+/*1200px*/
 @media (max-width: 75em) {
   hmtl {
     font-size: 56.25%;
@@ -37,6 +39,7 @@
     padding: 9.6rem 3.2rem;
   }
 }
+/*944px*/
 @media (max-width: 59em) {
   html {
     font-size: 50%;
@@ -122,6 +125,7 @@
     font-size: 3rem;
   }
 }
+/*704px*/
 @media (max-width: 44em) {
   .grid--3-cols,
   .grid--4-cols {
@@ -150,5 +154,56 @@
   .nav-col {
     grid-row: 1;
     grid-column: span 2;
+  }
+}
+/*544 px*/
+@media (max-width: 34em) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+  .btn,
+  .btn:link,
+  .btn:visited {
+    padding: 2.4rem 1.6rem;
+  }
+  .sectio-hero {
+    padding: 2.4rem 0rem 6.4rem 0rem;
+  }
+  .hero {
+    padding: 0 3.2rem;
+  }
+  .hero-img {
+    width: 80%;
+  }
+  .logos img {
+    height: 1.2rem;
+  }
+  .phone-container:nth-child(2) {
+    grid-row: 1;
+  }
+  .phone-container:nth-child(6) {
+    grid-row: 5;
+  }
+  .phone-container {
+    transform: translateY(2.4rem);
+  }
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
+  .cta-container {
+    grid-template-columns: 1fr;
+  }
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
   }
 }
