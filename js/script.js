@@ -1,5 +1,6 @@
 const headerEl = document.querySelector(".header");
 const btnNavEl = document.querySelector(".btn-mobile-nav");
+const heroEl = document.querySelector(".hero-section");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
@@ -31,3 +32,21 @@ allLinks.forEach(function (link) {
     }
   });
 });
+
+const observer = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+observer.observe(heroEl);

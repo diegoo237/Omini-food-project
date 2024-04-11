@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs."
+    />
 
-    <title>Omnifood</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
@@ -13,11 +17,17 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/general.css" />
     <link rel="stylesheet" href="./css/queries.css" />
+
+    <link rel="icon" href="./img/favicon-copy.png" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+
+    <title>Omnifood &mdash; Never coock again!</title>
   </head>
   <body>
     <header class="header">
       <a href="#">
-        <img src="./img/omnifood-logo.png" class="logo" alt="" />
+        <img src="./img/omnifood-logo.png" class="logo" alt="omnifood logo" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
@@ -45,6 +55,7 @@
           <h1 class="heading-primary">
             A healthy meal delivered to your door, every single day
           </h1>
+
           <p class="description">
             The smart 365-days-per-year food subscription that will make you eat
             healthy again. Tailored to your personal tastes and nutritional
@@ -52,7 +63,7 @@
           </p>
 
           <a href="#cta" class="btn btn-start orange margin-right-sm"
-            >Start eatin well</a
+            >Start eating well</a
           >
           <a href="#how" class="btn">Learn more &darr;</a>
 
@@ -96,8 +107,9 @@
             </p>
           </div>
         </div>
+
         <div class="hero-img-box">
-          <img src="./img/hero.png" alt="" class="hero-img" />
+          <img src="./img/hero-min.png" alt="" class="hero-img" />
         </div>
       </div>
     </section>
@@ -532,7 +544,7 @@
             </li>
           </ul>
           <div class="plan-sing-up">
-            <a href="#" class="btn-price">Start eatin well</a>
+            <a href="#cta" class="btn-price">Start eatin well</a>
           </div>
         </div>
         <div class="pricing-plan pricing-plan--complete">
@@ -612,7 +624,7 @@
             </li>
           </ul>
           <div class="plan-sing-up">
-            <a href="#" class="btn-price">Start eatin well</a>
+            <a href="#cta" class="btn-price">Start eatin well</a>
           </div>
         </div>
       </div>
@@ -669,13 +681,14 @@
               meal is on us!
             </p>
 
-            <form class="cta-form" action="#">
+            <form class="cta-form" name="sign-up" netlify>
               <div>
                 <label for="full-name">Full Name</label>
                 <input
                   id="full-name"
                   type="text"
                   placeholder="John Smith"
+                  name="full-name"
                   required
                 />
               </div>
@@ -685,12 +698,13 @@
                   id="email"
                   type="email"
                   placeholder="me@example.com"
+                  name="email"
                   required
                 />
               </div>
               <div>
                 <label for="select-where">Where did you hear from us?</label>
-                <select name="" id="select-where" required>
+                <select name="" id="select-where" name="select-where" required>
                   <option value="">Please choose one option</option>
                   <option value="friends">Friends and family</option>
                   <option value="youtube">Youtube Video</option>
@@ -714,18 +728,30 @@
           </a>
           <ul class="social-links">
             <li>
-              <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              <a class="footer-link instagram" href="#"
+                ><ion-icon
+                  alt="instagram logo"
+                  class="social-icon"
+                  name="logo-instagram"
+                ></ion-icon
               ></a>
             </li>
             <li>
               <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ><ion-icon
+                  alt="facebook logo"
+                  class="social-icon"
+                  name="logo-facebook"
+                ></ion-icon
               ></a>
             </li>
             <li>
               <a class="footer-link" href="#"
-                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ><ion-icon
+                  alt="twitter logo"
+                  class="social-icon"
+                  name="logo-twitter"
+                ></ion-icon
               ></a>
             </li>
           </ul>
@@ -740,8 +766,8 @@
             <p class="adress">
               623 Harrison St., 2nd Floor, San Francisco, CA 94107
             </p>
-            <a class="footer-link" href="#">415-201-6370</a>
-            <a class="footer-link" href="#">hello@omnifood.com</a>
+            <a alt="number" class="footer-link" href="#">415-201-6370</a>
+            <a alt="mail" class="footer-link" href="#">hello@omnifood.com</a>
           </address>
         </div>
         <nav class="nav-col">

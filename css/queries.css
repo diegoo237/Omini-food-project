@@ -206,4 +206,16 @@
     height: 32rem;
     grid-row: 1;
   }
+  .pricing-plan {
+    width: 85%;
+    justify-self: center;
+  }
+  .meal {
+    width: 85%;
+    justify-self: center;
+  }
+  .cta-container {
+    width: 94%;
+    margin: auto;
+  }
 }
