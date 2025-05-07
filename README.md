@@ -1,3 +1,4 @@
+**[HTML]** **[CSS]** **[JAVASCRIPT]**
 **🥗 Modern & Responsive Food Plans Website**<br/>
 
 An interactive website built with HTML, CSS, and JavaScript to present meal plans in a modern, dynamic, and responsive way. Perfect for users looking to view and manage food plans efficiently and attractively.
